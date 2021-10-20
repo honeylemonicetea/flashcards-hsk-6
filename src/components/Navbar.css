@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
+
+.navbar-container{
+    /* background-image: linear-gradient(#000000, #555555); */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1vh 5vw;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    font-family: 'Amatic SC', cursive;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* NAVBAR FLEX */
+.navbar-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.nb-left{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.nb-right{
+    display: flex;
+    width: 20%;
+    justify-content: space-around
+}
+
+.navbar-inner a{
+    padding: 1vh;
+    padding-top: 2vh;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2em;
+
+
+}
+
+
+
+@media (max-width: 650px) {
+
+    .navbar-container{
+        position: static;
+
+    }
+    .navbar-container a{
+        display: block;
+    }
+    .navbar-inner, .nb-left, .nb-right{
+        flex-direction: column;
+        width: 100%;
+
+
+    }
+    
+}
